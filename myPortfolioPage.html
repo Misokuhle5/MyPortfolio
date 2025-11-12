@@ -5,153 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Misokuhle Mdlankomo - Junior Software Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <style>
-        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 100; }
-        .modal-content { background: white; margin: 10% auto; padding: 20px; width: 80%; max-width: 600px; border-radius: 8px; }
-        .card:hover { transform: translateY(-10px); transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
-        .progress-bar { height: 10px; background: #e5e7eb; border-radius: 5px; overflow: hidden; }
-        .progress { height: 100%; background: #f97316; transition: width 0.5s ease; }
-        .typewriter { overflow: hidden; white-space: nowrap; border-right: 0.15em solid orange; animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite; }
-        @keyframes typing { from { width: 0 } to { width: 100% } } @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: orange; } }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-pink-50 text-gray-800">
     <!-- Hero Section -->
-    <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-700 to-orange-600">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4 animate__fadeIn">Misokuhle Mdlankomo</h1>
-            <p class="text-xl md:text-2xl mb-6 typewriter">Junior Software Developer | Crafting Seamless Web Experiences</p>
-            <div class="space-x-4">
-                <a href="path/to/your-resume.pdf" download class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold hover:bg-orange-600 hover:text-white transition">Download Resume</a>
-                <a href="#contact" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 hover:border-orange-600 transition">Hire Me</a>
+    <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-pink-300 to-rose-300 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 text-white animate__fadeIn drop-shadow-lg">Misokuhle Mdlankomo <span class="heart">♥</span></h1>
+            <p class="text-xl md:text-2xl mb-2 typewriter text-white drop-shadow-md">Junior Software Developer</p>
+            <p class="text-lg md:text-xl mb-8 text-white opacity-90 max-w-2xl mx-auto">Crafting beautiful, user-friendly web experiences with modern technologies. Passionate about creating digital solutions that make a difference.</p>
+            <div class="space-x-4 mb-8">
+                <a href="Misokuhle Mdlankomo CV.pdf" download class="bg-white text-pink-500 px-8 py-3 rounded-full font-semibold hover:bg-pink-400 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">Download Resume</a>
+                <a href="#contact" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-pink-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">Let's Connect</a>
+            </div>
+            <div class="flex justify-center space-x-6 text-white">
+                <a href="#projects" class="hover:text-pink-200 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                    </svg>
+                </a>
+                <a href="#experience" class="hover:text-pink-200 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
+                    </svg>
+                </a>
+                <a href="#contact" class="hover:text-pink-200 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Navigation -->
-    <nav class="bg-gray-800 p-4 sticky top-0 z-10">
+    <nav class="bg-pink-200 p-4 sticky top-0 z-10">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold">Portfolio</h1>
+            <h1 class="text-xl font-bold text-pink-600">Portfolio</h1>
             <div class="space-x-4">
-                <a href="#about" class="hover:text-orange-600">About</a>
-                <a href="#skills" class="hover:text-orange-600">Skills</a>
-                <a href="#projects" class="hover:text-orange-600">Projects</a>
-                <a href="#experience" class="hover:text-orange-600">Experience</a>
-                <a href="#education" class="hover:text-orange-600">Education</a>
-                <a href="#references" class="hover:text-orange-600">References</a>
-                <a href="#contact" class="hover:text-orange-600">Contact</a>
+                <a href="#about" class="hover:text-pink-500">About</a>
+                <a href="#skills" class="hover:text-pink-500">Skills</a>
+                <a href="#projects" class="hover:text-pink-500">Projects</a>
+                <a href="#experience" class="hover:text-pink-500">Experience</a>
+                <a href="#education" class="hover:text-pink-500">Education</a>
+                <a href="#references" class="hover:text-pink-500">References</a>
+                <a href="#contact" class="hover:text-pink-500">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-gray-800">
+    <section id="about" class="py-16 bg-rose-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-4 text-orange-600">About Me</h2>
+            <h2 class="text-4xl font-bold mb-4 text-pink-600">About Me <span class="heart">♥</span></h2>
             <p class="text-lg">
-                I'm Misokuhle Mdlankomo, a Junior Software Developer based in Cape Town, South Africa. At HashData since 2024, I specialize in PHP, Laravel, and full-stack development, delivering intuitive interfaces that boost user engagement by up to 15%. Trained through CodeSpace’s Software Development Program and RedAcademy’s 12-month program (6 months classroom, 6 months client projects), I bring hands-on expertise in building scalable, user-focused solutions. Let’s create innovative software together!
+                Hiii! I'm Misokuhle Mdlankomo, a super passionate Junior Software Developer from Cape Town, South Africa! I’m all about creating adorable, user-friendly web experiences that make people smile, boosting engagement by up to 15%. With over 10 months as an intern, I’ve honed my skills in PHP, Laravel, and full-stack development, crafting intuitive interfaces and scalable solutions. I’ve completed intensive software development training, including a 12-month program with 6 months of hands-on client projects, mastering tools like React, JavaScript, and MySQL. Let’s sprinkle some pink-tastic magic on your next project!
             </p>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-gray-900" x-data="{ filter: 'all' }">
+    <section id="skills" class="py-16 bg-pink-50" x-data="{ filter: 'all' }">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-4 text-orange-600">Skills</h2>
+            <h2 class="text-4xl font-bold mb-4 text-pink-600">Skills <span class="heart">♥</span></h2>
             <div class="flex space-x-4 mb-6">
-                <button @click="filter = 'all'" class="px-4 py-2 rounded-full" :class="filter === 'all' ? 'bg-orange-600 text-white' : 'bg-gray-700 text-gray-300'">All</button>
-                <button @click="filter = 'technical'" class="px-4 py-2 rounded-full" :class="filter === 'technical' ? 'bg-orange-600 text-white' : 'bg-gray-700 text-gray-300'">Technical</button>
-                <button @click="filter = 'soft'" class="px-4 py-2 rounded-full" :class="filter === 'soft' ? 'bg-orange-600 text-white' : 'bg-gray-700 text-gray-300'">Soft Skills</button>
+                <button @click="filter = 'all'" class="px-4 py-2 rounded-full" :class="filter === 'all' ? 'bg-pink-400 text-white' : 'bg-rose-200 text-gray-800'">All</button>
+                <button @click="filter = 'technical'" class="px-4 py-2 rounded-full" :class="filter === 'technical' ? 'bg-pink-400 text-white' : 'bg-rose-200 text-gray-800'">Technical</button>
+                <button @click="filter = 'soft'" class="px-4 py-2 rounded-full" :class="filter === 'soft' ? 'bg-pink-400 text-white' : 'bg-rose-200 text-gray-800'">Soft Skills</button>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <template x-if="filter === 'all' || filter === 'technical'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>PHP & Laravel</p>
                         <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'technical'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>JavaScript</p>
                         <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'technical'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>Tailwind CSS</p>
                         <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'technical'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>Livewire</p>
                         <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'technical'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>Filament</p>
                         <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'technical'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>Frontend Development</p>
                         <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'technical'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>User Experience (UI/UX)</p>
                         <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'technical'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>C#</p>
                         <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'technical'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>ReactJs</p>
                         <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
                     </div>
                 </template>
-                <template xif="filter === 'all' || filter === 'technical'">
-                    <div class=" xn m bg-gray-700 p-4 rounded shadow">
+                <template x-if="filter === 'all' || filter === 'technical'">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>Azure</p>
                         <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'technical'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>HTML & CSS</p>
                         <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'technical'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>PostgreSQL</p>
                         <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'technical'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>Microsoft SQL</p>
                         <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'soft'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>Teamwork</p>
                         <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
                     </div>
                 </template>
                 <template x-if="filter === 'all' || filter === 'soft'">
-                    <div class="bg-gray-700 p-4 rounded shadow">
+                    <div class="bg-white p-4 rounded shadow card">
                         <p>Time Management</p>
                         <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
                     </div>
@@ -161,161 +174,162 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-800" x-data="{ filter: 'all' }">
+    <section id="projects" class="py-16 bg-rose-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-4 text-orange-600">Projects</h2>
-            <div class="flex space-x-4 mb-6">
-                <button @click="filter = 'all'" class="px-4 py-2 rounded-full" :class="filter === 'all' ? 'bg-orange- generator-600 text-white' : 'bg-gray-700 text-gray-300'">All</button>
-                <button @click="filter = 'laravel'" class="px-4 py-2 rounded-full" :class="filter === 'laravel' ? 'bg-orange-600 text-white' : 'bg-gray-700 text-gray-300'">Laravel</button>
-                <button @click="filter = 'frontend'" class="px-4 py-2 rounded-full" :class="filter === 'frontend' ? 'bg-orange-600 text-white' : 'bg-gray-700 text-gray-300'">Frontend</button>
-                <button @click="filter = 'redacademy'" class="px-4 py-2 rounded-full" :class="filter === 'redacademy' ? 'bg-orange-600 text-white' : 'bg-gray-700 text-gray-300'">RedAcademy</button>
+            <h2 class="text-4xl font-bold mb-4 text-pink-600">My Websites <span class="heart">♥</span></h2>
+            <p class="text-lg mb-8 text-center text-gray-700">Check out my live websites showcasing my development skills and creativity!</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Arise Empowerment Website -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop&crop=center" alt="Arise Empowerment Website" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-2 right-2 bg-pink-500 text-white px-2 py-1 rounded-full text-xs font-semibold">LIVE</div>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-pink-600 mb-3">Arise Empowerment</h3>
+                    <p class="text-gray-700 mb-4">A beautiful empowerment platform designed to inspire and uplift communities. Features responsive design, engaging content, and user-friendly navigation.</p>
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-600 mb-2"><strong>Tech Stack:</strong></p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-pink-100 text-pink-600 px-2 py-1 rounded-full text-xs">HTML5</span>
+                            <span class="bg-pink-100 text-pink-600 px-2 py-1 rounded-full text-xs">CSS3</span>
+                            <span class="bg-pink-100 text-pink-600 px-2 py-1 rounded-full text-xs">JavaScript</span>
+                            <span class="bg-pink-100 text-pink-600 px-2 py-1 rounded-full text-xs">Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://ariseempowerment.unaux.com/" target="_blank" class="bg-pink-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-pink-600 transition flex-1 text-center">Visit Site</a>
+                        <button onclick="openModal('arise-empowerment')" class="bg-rose-200 text-pink-600 px-4 py-2 rounded-full font-semibold hover:bg-rose-300 transition">Details</button>
+                    </div>
+                </div>
+
+                <!-- DeskVibe Website -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=250&fit=crop&crop=center" alt="DeskVibe Website" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-2 right-2 bg-pink-500 text-white px-2 py-1 rounded-full text-xs font-semibold">LIVE</div>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-pink-600 mb-3">DeskVibe</h3>
+                    <p class="text-gray-700 mb-4">A modern workspace solution platform featuring sleek design, interactive elements, and optimized user experience for productivity enthusiasts.</p>
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-600 mb-2"><strong>Tech Stack:</strong></p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-pink-100 text-pink-600 px-2 py-1 rounded-full text-xs">HTML5</span>
+                            <span class="bg-pink-100 text-pink-600 px-2 py-1 rounded-full text-xs">CSS3</span>
+                            <span class="bg-pink-100 text-pink-600 px-2 py-1 rounded-full text-xs">JavaScript</span>
+                            <span class="bg-pink-100 text-pink-600 px-2 py-1 rounded-full text-xs">UI/UX Design</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="https://deskvibe.unaux.com/" target="_blank" class="bg-pink-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-pink-600 transition flex-1 text-center">Visit Site</a>
+                        <button onclick="openModal('deskvibe')" class="bg-rose-200 text-pink-600 px-4 py-2 rounded-full font-semibold hover:bg-rose-300 transition">Details</button>
+                    </div>
+                </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <template x-if="filter === 'all' || filter === 'laravel'">
-                    <div class="bg-gray-700 p-6 rounded shadow card cursor-pointer" onclick="openModal('resume-system')">
-                        <img src="https://via.placeholder.com/300x150?text=Resume+System" alt="Resume System" class="mb-4 rounded">
-                        <h3 class="text-xl font-semibold">Resume Management System</h3>
-                        <p>Developed a Laravel-based system with Livewire for managing resume details (address, city, contact numbers), improving data accuracy by 20%.</p>
-                        <p><strong>Tech:</strong> PHP, Laravel, Livewire, Tailwind CSS</p>
-                    </div>
-                </template>
-                <template x-if="filter === 'all' || filter === 'laravel'">
-                    <div class="bg-gray-700 p-6 rounded shadow card cursor-pointer" onclick="openModal('ecd-dashboard')">
-                        <img src="https://via.placeholder.com/300x150?text=ECD+Dashboard" alt="ECD Dashboard" class="mb-4 rounded">
-                        <h3 class="text-xl font-semibold">ECD Practitioner Dashboard</h3>
-                        <p>Built a Filament resource for managing ECD records with filters for Region, Circuit, and Component, serving 100+ users.</p>
-                        <p><strong>Tech:</strong> PHP, Laravel, Filament</p>
-                    </div>
-                </template>
-                <template x-if="filter === 'all' || filter === 'frontend'">
-                    <div class="bg-gray-700 p-6 rounded shadow card cursor-pointer" onclick="openModal('frontend-ui')">
-                        <img src="https://via.placeholder.com/300x150?text=Frontend+UI" alt="Frontend UI" class="mb-4 rounded">
-                        <h3 class="text-xl font-semibold">Frontend UI Enhancements</h3>
-                        <p>Improved 5+ applications at HashData, increasing user retention by 15% with intuitive interfaces.</p>
-                        <p><strong>Tech:</strong> JavaScript, Tailwind CSS, HTML</p>
-                    </div>
-                </template>
-                <template x-if="filter === 'all' || filter === 'laravel' || filter === 'frontend'">
-                    <div class="bg-gray-700 p-6 rounded shadow card cursor-pointer" onclick="openModal('language-proficiency')">
-                        <img src="https://via.placeholder.com/300x150?text=Language+Proficiency" alt="Language Proficiency" class="mb-4 rounded">
-                        <h3 class="text-xl font-semibold">Language Proficiency Component</h3>
-                        <p>Designed a Livewire component with star-rating inputs for language skills, enhancing user interaction.</p>
-                        <p><strong>Tech:</strong> PHP, Laravel, Livewire, Alpine.js, Tailwind CSS</p>
-                    </div>
-                </template>
-                <template x-if="filter === 'all' || filter === 'redacademy'">
-                    <div class="bg-gray-700 p-6 rounded shadow card cursor-pointer" onclick="openModal('financial-calculator')">
-                        <img src="https://via.placeholder.com/300x150?text=Financial+Calculator" alt="Financial Calculator" class="mb-4 rounded">
-                        <h3 class="text-xl font-semibold">Financial Calculator</h3>
-                        <p>Developed a client-facing financial calculator for RedAcademy, ensuring accurate calculations and user-friendly interfaces.</p>
-                        <p><strong>Tech:</strong> PHP, JavaScript, MySQL</p>
-                    </div>
-                </template>
-                <template x-if="filter === 'all' || filter === 'redacademy'">
-                    <div class="bg-gray-700 p-6 rounded shadow card cursor-pointer" onclick="openModal('coffee-machine')">
-                        <img src="https://via.placeholder.com/300x150?text=Coffee+Machine" alt="Coffee Machine" class="mb-4 rounded">
-                        <h3 class="text-xl font-semibold">Coffee Machine Console App</h3>
-                        <p>Built a C# console application simulating a coffee machine, showcasing problem-solving and OOP skills.</p>
-                        <p><strong>Tech:</strong> C#, .NET</p>
-                    </div>
-                </template>
+            
+            <!-- Call to Action -->
+            <div class="text-center mt-12">
+                <p class="text-lg text-gray-700 mb-4">Want to see more of my work or collaborate on a project?</p>
+                <a href="#contact" class="bg-gradient-to-r from-pink-400 to-rose-400 text-white px-8 py-3 rounded-full font-semibold hover:from-pink-500 hover:to-rose-500 transition-all duration-300 shadow-lg hover:shadow-xl">Let's Connect!</a>
             </div>
         </div>
+        
         <!-- Modal -->
         <div id="modal" class="modal">
-            <div class="modal-content text-gray-900">
-                <span onclick="closeModal()" class="cursor-pointer text-2xl float-right">×</span>
+            <div class="modal-content text-gray-800">
+                <span onclick="closeModal()" class="cursor-pointer text-2xl float-right text-pink-600 hover:text-pink-800 transition">×</span>
                 <div id="modal-body"></div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-16 bg-gray-900">
+    <section id="experience" class="py-16 bg-pink-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-4 text-orange-600">Experience</h2>
-            <div class="bg-gray-700 p-6 rounded shadow mb-4">
-                <h3 class="text-xl font-semibold">Junior Software Developer, HashData</h3>
-                <p class="text-gray-400">2024 - Present</p>
+            <h2 class="text-4xl font-bold mb-4 text-pink-600">Experience <span class="heart">♥</span></h2>
+            <div class="bg-white p-6 rounded shadow card mb-4">
+                <h3 class="text-xl font-semibold text-pink-600">Junior Software Developer Intern</h3>
+                <p class="text-gray-600">2024 - Present (10+ months)</p>
                 <ul class="list-disc pl-5">
-                    <li>Contributed to frontend application development, enhancing user interfaces for 5+ projects, improving user retention by 15%.</li>
-                    <li>Developed Laravel-based systems, including resume management and ECD dashboards, with Livewire and Filament.</li>
-                    <li>Implemented database migrations and API integrations, ensuring seamless data flow and scalability.</li>
+                    <li>Added sparkle to 5+ frontend apps, boosting user retention by 15% with cute interfaces.</li>
+                    <li>Developed Laravel-based systems like resume management and ECD dashboards with Livewire and Filament.</li>
+                    <li>Ensured smooth database migrations and API integrations for super scalable solutions.</li>
                 </ul>
             </div>
-            <div class="bg-gray-700 p-6 rounded shadow">
-                <h3 class="text-xl font-semibold">Software Development Trainee, RedAcademy</h3>
-                <p class="text-gray-400">2023 - 2024</p>
+            <div class="bg-white p-6 rounded shadow card">
+                <h3 class="text-xl font-semibold text-pink-600">Software Development Trainee</h3>
+                <p class="text-gray-600">2023 - 2024</p>
                 <ul class="list-disc pl-5">
-                    <li>Completed 6 months of client-based projects, developing real-world software solutions in a live coding environment.</li>
-                    <li>Collaborated with clients to build financial calculators and delivery charge estimators, ensuring accurate calculations and user-friendly interfaces.</li>
-                    <li>Designed and created databases for efficient data storage, established API connections, and implemented backend parameters for complex financial calculations.</li>
-                    <li>Performed unit testing to ensure accuracy and reliability of backend services and APIs, optimizing performance.</li>
-                    <li>Created a console application simulating a coffee machine, showcasing advanced problem-solving and object-oriented programming skills.</li>
+                    <li>Worked on 6 months of client projects, creating real-world solutions in a fun coding environment.</li>
+                    <li>Built financial calculators and delivery charge estimators with user-friendly designs.</li>
+                    <li>Designed databases for efficient storage and created API connections for complex calculations.</li>
+                    <li>Tested backend services and APIs for perfect performance.</li>
+                    <li>Created a coffee machine console app in C#, showcasing my OOP skills.</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-16 bg-gray-800">
+    <section id="education" class="py-16 bg-rose-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-4 text-orange-600">Education & Training</h2>
-            <div class="bg-gray-700 p-6 rounded shadow mb-4">
-                <h3 class="text-xl font-semibold">CodeSpace Academy</h3>
-                <p class="text-gray-400">Software Development Program, 2023</p>
-                <p>Completed intensive training in software development, mastering React, JavaScript, HTML/CSS, GitHub, and frontend frameworks.</p>
+            <h2 class="text-4xl font-bold mb-4 text-pink-600">Education & Training <span class="heart">♥</span></h2>
+            <div class="bg-white p-6 rounded shadow card mb-4">
+                <h3 class="text-xl font-semibold text-pink-600">Software Development Program</h3>
+                <p class="text-gray-600">2023</p>
+                <p>Mastered React, JavaScript, HTML/CSS, GitHub, and frontend frameworks in a fun, intensive program!</p>
             </div>
-            <div class="bg-gray-700 p-6 rounded shadow">
-                <h3 class="text-xl font-semibold">RedAcademy</h3>
-                <p class="text-gray-400">Software Development Program (NQF Level 5), 2023 - 2024</p>
-                <p>Completed a 12-month program with 6 months of classroom training in JavaScript, MySQL, and C#, followed by 6 months of experiential learning on client projects.</p>
+            <div class="bg-white p-6 rounded shadow card">
+                <h3 class="text-xl font-semibold text-pink-600">Software Development Program (NQF Level 5)</h3>
+                <p class="text-gray-600">2023 - 2024</p>
+                <p>Completed a 12-month program with 6 months of classroom training in JavaScript, MySQL, and C#, plus 6 months of hands-on client projects.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- References Section -->
-    <section id="references" class="py-16 bg-gray-900">
+    <section id="references" class="py-16 bg-pink-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-4 text-orange-600">References</h2>
+            <h2 class="text-4xl font-bold mb-4 text-pink-600">References <span class="heart">♥</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-gray-700 p-6 rounded shadow">
+                <div class="bg-white p-6 rounded shadow card">
                     <p><strong>Mahomed Goolam</strong></p>
                     <p>Phone: 084-978-6073</p>
-                    <p>Email: <a href="mailto:mahomed.goolam@redacademy.co.za" class="text-orange-600">mahomed.goolam@redacademy.co.za</a></p>
+                    <p>Email: <a href="mailto:mahomed.goolam@redacademy.co.za" class="text-pink-500">mahomed.goolam@redacademy.co.za</a></p>
                 </div>
-                <div class="bg-gray-700 p-6 rounded shadow">
+                <div class="bg-white p-6 rounded shadow card">
                     <p><strong>Emmanuel Madzunye</strong></p>
                     <p>Phone: 082-577-7469</p>
-                    <p>Email: <a href="mailto:emmanuel.madzunye@redacademy.co.za" class="text-orange-600">emmanuel.madzunye@redacademy.co.za</a></p>
+                    <p>Email: <a href="mailto:emmanuel.madzunye@redacademy.co.za" class="text-pink-500">emmanuel.madzunye@redacademy.co.za</a></p>
                 </div>
-                <div class="bg-gray-700 p-6 rounded shadow">
+                <div class="bg-white p-6 rounded shadow card">
                     <p><strong>Sasha Heyburgh</strong></p>
-                    <p>Email: <a href="mailto:sasha@codespace.co.za" class="text-orange-600">sasha@codespace.co.za</a></p>
+                    <p>Email: <a href="mailto:sasha@codespace.co.za" class="text-pink-500">sasha@codespace.co.za</a></p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-800">
+    <section id="contact" class="py-16 bg-rose-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-4 text-orange-600">Contact</h2>
+            <h2 class="text-4xl font-bold mb-4 text-pink-600">Contact <span class="heart">♥</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gray-700 p-6 rounded shadow">
+                <div class="bg-white p-6 rounded shadow card">
                     <p><strong>Name:</strong> Misokuhle Mdlankomo</p>
-                    <p><strong>Email:</strong> <a href="mailto:misom1300@gmail.com" class="text-orange-600">misom1300@gmail.com</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:misom1300@gmail.com" class="text-pink-500">misom1300@gmail.com</a></p>
                     <p><strong>Phone:</strong> 084 389 4539</p>
                     <p><strong>Address:</strong> 54 Gie Rd, Heron Cove, Tableview, Cape Town, 7441, South Africa</p>
-                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-profile" class="text-orange-600">Your LinkedIn Profile</a></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/your-profile" class="text-orange-600">Your GitHub Profile</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/misokuhle-mdlankomo" class="text-pink-500">linkedin.com/in/misokuhle-mdlankomo</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/misokuhle" class="text-pink-500">github.com/misokuhle</a></p>
                 </div>
-                <div class="bg-gray-700 p-6 rounded shadow">
-                    <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
-                    <form action="https://formspree.io/f/your-form-id" method="POST">
-                        <input type="text" name="name" placeholder="Your Name" class="w-full p-2 mb-4 bg-gray-800 text-white rounded" required>
-                        <input type="email" name="email" placeholder="Your Email" class="w-full p-2 mb-4 bg-gray-800 text-white rounded" required>
-                        <textarea name="message" placeholder="Your Message" class="w-full p-2 mb-4 bg-gray-800 text-white rounded" rows="4" required></textarea>
-                        <button type="submit" class="bg-orange-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-orange-700 transition">Send Message</button>
+                <div class="bg-white p-6 rounded shadow card">
+                    <h3 class="text-xl font-semibold text-pink-600 mb-4">Get in Touch</h3>
+                    <form action="https://formspree.io/f/xvgbppde" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" class="w-full p-2 mb-4 bg-rose-50 text-gray-800 rounded" required>
+                        <input type="email" name="email" placeholder="Your Email" class="w-full p-2 mb-4 bg-rose-50 text-gray-800 rounded" required>
+                        <textarea name="message" placeholder="Your Message" class="w-full p-2 mb-4 bg-rose-50 text-gray-800 rounded" rows="4" required></textarea>
+                        <button type="submit" class="bg-pink-400 text-white px-6 py-2 rounded-full font-semibold hover:bg-pink-500 transition">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -323,88 +337,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 p-4 text-center">
-        <p>© 2025 Misokuhle Mdlankomo. All rights reserved.</p>
+    <footer class="bg-pink-200 p-4 text-center text-gray-800">
+        <p>© 2025 Misokuhle Mdlankomo. Made with <span class="heart">♥</span>.</p>
     </footer>
 
-    <script>
-        // GSAP Animations
-        gsap.from(".animate__fadeIn", { opacity: 0, y: 50, duration: 1, stagger: 0.2 });
-        gsap.from(".card", { opacity: 0, y: 30, duration: 0.8, stagger: 0.1, delay: 0.5 });
-
-        // Modal Functionality
-        const projectDetails = {
-            'resume-system': {
-                title: 'Resume Management System',
-                description: 'A Laravel-based system with Livewire for managing resume contact details (address, city, contact numbers), with dynamic forms and validation. Improved data accuracy by 20% for internal teams.',
-                tech: 'PHP, Laravel, Livewire, Tailwind CSS',
-                link: 'https://github.com/your-profile/resume-system',
-                image: 'https://via.placeholder.com/300x150?text=Resume+System'
-            },
-            'ecd-dashboard': {
-                title: 'ECD Practitioner Dashboard',
-                description: 'Developed a Filament resource for managing ECD Practitioner records with filters for Region, Circuit, and Component, serving 100+ users efficiently.',
-                tech: 'PHP, Laravel, Filament',
-                link: 'https://github.com/your-profile/ecd-dashboard',
-                image: 'https://via.placeholder.com/300x150?text=ECD+Dashboard'
-            },
-            'frontend-ui': {
-                title: 'Frontend UI Enhancements',
-                description: 'Contributed to 5+ frontend applications at HashData, using Tailwind CSS and JavaScript to create intuitive interfaces, boosting user retention by 15%.',
-                tech: 'JavaScript, Tailwind CSS, HTML',
-                link: 'https://github.com/your-profile/frontend-ui',
-                image: 'https://via.placeholder.com/300x150?text=Frontend+UI'
-            },
-            'language-proficiency': {
-                title: 'Language Proficiency Component',
-                description: 'Designed a Livewire component with a star-rating system for language skills (speaking, reading, writing), improving user interaction with dynamic inputs.',
-                tech: 'PHP, Laravel, Livewire, Alpine.js, Tailwind CSS',
-                link: 'https://github.com/your-profile/language-proficiency',
-                image: 'https://via.placeholder.com/300x150?text=Language+Proficiency'
-            },
-            'financial-calculator': {
-                title: 'Financial Calculator',
-                description: 'Developed a client-facing financial calculator for RedAcademy, ensuring accurate calculations and user-friendly interfaces for financial planning.',
-                tech: 'PHP, JavaScript, MySQL',
-                link: 'https://github.com/your-profile/financial-calculator',
-                image: 'https://via.placeholder.com/300x150?text=Financial+Calculator'
-            },
-            'coffee-machine': {
-                title: 'Coffee Machine Console App',
-                description: 'Built a C# console application simulating a coffee machine, showcasing problem-solving and object-oriented programming skills.',
-                tech: 'C#, .NET',
-                link: 'https://github.com/your-profile/coffee-machine',
-                image: 'https://via.placeholder.com/300x150?text=Coffee+Machine'
-            }
-        };
-
-        function openModal(projectId) {
-            const modal = document.getElementById('modal');
-            const modalBody = document.getElementById('modal-body');
-            const project = projectDetails[projectId];
-            modalBody.innerHTML = `
-                <img src="${project.image}" alt="${project.title}" class="mb-4 rounded">
-                <h3 class="text-2xl font-bold mb-4">${project.title}</h3>
-                <p>${project.description}</p>
-                <p><strong>Tech Stack:</strong> ${project.tech}</p>
-                <p><a href="${project.link}" class="text-blue-500">View on GitHub</a></p>
-            `;
-            modal.style.display = 'block';
-            gsap.from(".modal-content", { opacity: 0, scale: 0.8, duration: 0.5 });
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('modal');
-            modal.style.display = 'none';
-        }
-
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            const modal = document.getElementById('modal');
-            if (event.target === modal) {
-                closeModal();
-            }
-        };
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

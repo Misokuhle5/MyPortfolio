@@ -1,0 +1,77 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal { 
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(255, 182, 193, 0.8); 
+    z-index: 100; 
+}
+
+.modal-content { 
+    background: #fff0f5; 
+    margin: 10% auto; 
+    padding: 20px; 
+    width: 80%; 
+    max-width: 600px; 
+    border-radius: 15px; 
+    border: 2px solid #ffb6c1; 
+}
+
+.card { 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    background: #fff0f5; 
+    border: 2px solid #ffb6c1; 
+    border-radius: 15px; 
+}
+
+.card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.5); 
+}
+
+.progress-bar { 
+    height: 10px; 
+    background: #ffe4e1; 
+    border-radius: 5px; 
+    overflow: hidden; 
+}
+
+.progress { 
+    height: 100%; 
+    background: #ff69b4; 
+    transition: width 0.5s ease; 
+}
+
+.typewriter { 
+    overflow: hidden; 
+    white-space: nowrap; 
+    border-right: 0.15em solid #ff69b4; 
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite; 
+}
+
+@keyframes typing { 
+    from { width: 0 } 
+    to { width: 100% } 
+}
+
+@keyframes blink-caret { 
+    from, to { border-color: transparent } 
+    50% { border-color: #ff69b4; } 
+}
+
+.heart { 
+    color: #ff69b4; 
+    animation: pulse 1.5s infinite; 
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
